@@ -1,10 +1,11 @@
 #summary Known Issues
+#labels Featured
 
 = Known Issues =
 
- * Login required for Daily Download page
+ * Login required for Daily Download page, site update coming soon to resolve this
 
- * *Important:* to view all fixed and open bugs [http://code.google.com/p/emusicdownloadmanager/issues/list?can=1&q=&colspec=ID+Type+Status+Priority+Milestone+Owner+Summary&cells=tiles click here], if you don't see your specific issue [http://code.google.com/p/emusicdownloadmanager/issues/entry file a bug] and a developer will be in contact.
+ * to view all fixed and open bugs [http://code.google.com/p/emusicdownloadmanager/issues/list?can=1&q=&colspec=ID+Type+Status+Priority+Milestone+Owner+Summary&cells=tiles click here], if you don't see your specific issue [http://code.google.com/p/emusicdownloadmanager/issues/entry file a bug] and a developer will be in contact.
 
  * *Linux:* The installer needs the execute bit on the file: chmod ug+x 
 
