@@ -1,0 +1,5 @@
+#summary Changelog of test and released builds
+#labels Featured
+
+== 4.0 build 2008061701 - Initial Beta 1 Release==
+ * Available [http://www.emusic.com/dlm/dlm4.html here]
