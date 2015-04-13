@@ -1,0 +1,59 @@
+## EMX File Format Documentation ##
+
+Below is the beginning of the documentation for our new EMX download file format.  This format is:
+  * now open and no longer encrypted,
+  * it is now track-centric vs album specific and
+  * includes more information than previous EMP versions.
+  * There will be one 
+
+&lt;TRACK&gt;
+
+ container per track, resulting in some duplicate data, but ensuring track portability.
+  * This format applies to both music and audiobooks.
+```
+<?xml version='1.0' encoding="UTF-8"?>
+  <PACKAGE>
+    <ACTION>download</ACTION>
+    <EXP_DATE>03/08/2008 09:31</EXP_DATE>
+
+    <PROVIDER>
+      <AUTHOR>eMusic.com</AUTHOR>
+      <NAME>eMusic.com</NAME>
+      <URL>http://www.emusic.com</URL>
+      <COPYRIGHT>Portions Copyright (C) 2004-2007 eMusic.com Inc; see http://www.emusic.com for more details</COPYRIGHT>
+      <CONTACT>support@emusic.com</CONTACT>
+    </PROVIDER>
+
+    <TRACKLIST>
+      <TRACK>
+        <TRACKID>1111111</TRACKID>
+        <TRACKURL>http://THE_DOWNLOAD_URL.mp3</TRACKURL>
+        <TRACKNUM>1</TRACKNUM>
+        <TRACKCOUNT>7</TRACKCOUNT>
+        <DISCNUM>1</DISCNUM>
+        <DISCCOUNT>1</DISCCOUNT>
+        <TITLE>track title</TITLE>
+        <ALBUM>album tile</ALBUM>
+        <ALBUMID>222222</ALBUMID>
+        <ALBUMURL>full album url</ALBUMURL>
+        <ARTIST>artist name</ARTIST>
+        <ARTISTID>33333333</ARTISTID>
+        <ARTISTURL>full artist url</ARTISTURL>
+        <GENRE>tracks genre</GENRE>
+        <GENREID>555</GENREID>
+        <GENREURL>full genre url</GENREURL>
+        <LABEL>label's name</LABEL>
+        <LABELID>666666</LABELID>
+        <LABELURL>full label url</LABELURL>
+        <EXTENSION>.mp3</EXTENSION>
+        <MIMETYPE>audio/mpeg</MIMETYPE>
+        <DURATION>time in seconds, ie: 600</DURATION>
+        <ALBUMART>full album art information</ALBUMART>
+        <STYLES>array of style number and name: 305:Emo,375:Power Pop</STYLES>
+      </TRACK>
+
+    </TRACKLIST>
+  </PACKAGE>
+```
+
+
